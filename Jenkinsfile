@@ -10,7 +10,7 @@ pipeline {
                     #!/bin/bash
                     echo "hello world"
 		    cd /home/ubuntu/project/
-		    ansible node -m ping
+		    sudo ansible node -m ping
                  '''
              }
         }
