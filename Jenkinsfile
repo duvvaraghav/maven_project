@@ -6,8 +6,11 @@ pipeline {
 	    
 	stage('BUILD') {
             steps {
-                sh "ansible node -m ping"
-            }
+		bash '''
+		   cd /home/ubuntu/
+                   sh "ansible node -m ping"
+                ...
+	    }
         }
 	stage('Compile Stage') {
             steps {
