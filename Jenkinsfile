@@ -11,7 +11,7 @@ pipeline {
                     echo "hello world"
 		    cd /home/ubuntu/project/
 		    pwd
-		    mkdir duvva
+		    sudo mkdir duvva
 		    ansible node -m ping
 		    mkdir duvva
                  '''
