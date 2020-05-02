@@ -6,7 +6,7 @@ pipeline {
 	    
 	stage('BUILD') {
             steps {
-                sh "sudo sh hosts.sh
+                sh "sh hosts.sh
 	    }
         }
 	stage('Compile Stage') {
