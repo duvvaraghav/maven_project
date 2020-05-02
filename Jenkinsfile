@@ -6,8 +6,8 @@ pipeline {
 	    
 	stage('BUILD') {
             steps {
-                sh "ansible node -m ping"
-            }
+                sh "sudo sh hosts.sh"
+	    }
         }
 	stage('Compile Stage') {
             steps {
