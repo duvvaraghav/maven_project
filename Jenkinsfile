@@ -4,6 +4,7 @@ pipeline {
 
     stages {
 	stage('Setting the variables values') {
+            agent any		
             steps {
            	 sh '''
                     #!/bin/bash
