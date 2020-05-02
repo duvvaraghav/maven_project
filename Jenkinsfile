@@ -1,13 +1,15 @@
 // Declarative pipeline
 pipeline {
-    agent any
-    
+    agent none
+
     stages {
-	stage('Ansible') {
-	  ansibleplaybook (
-              colorized: true
-	      become: true
-	      inventory: 'hosts.yml
-	 }
+	stage('Setting the variables values') {
+            steps {
+           	 sh '''
+                    #!/bin/bash
+                    echo "hello world"
+                 '''
+             }
+        }
     }
-}		  
+}
