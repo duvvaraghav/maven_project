@@ -9,6 +9,8 @@ pipeline {
            	 sh '''
                     #!/bin/bash
                     echo "hello world"
+		    cd /home/ubuntu/project/
+		    ansible node -m ping
                  '''
              }
         }
