@@ -3,8 +3,13 @@ pipeline {
     agent any
     
     stages {
-          
-        stage('Compile Stage') {
+	    
+	stage('BUILD') {
+            steps {
+                sh "ansible node -m ping"
+            }
+        }
+	stage('Compile Stage') {
             steps {
                 sh "mvn clean compile"
             }
